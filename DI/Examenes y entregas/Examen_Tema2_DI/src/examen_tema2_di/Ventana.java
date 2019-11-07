@@ -89,7 +89,7 @@ public class Ventana extends JFrame implements ActionListener{
         pInferior = new JPanel();
         btnBuscar = new JButton("Ir a buscar");
         btnRegistro = new JButton("Ir a registro");
-        btnPasar = new JButton(imagen);
+        btnPasar = new JButton();
         nombre = new JTextField();
         dni = new JTextField();
         lb_nombre = new JLabel("Nombre");
@@ -106,8 +106,9 @@ public class Ventana extends JFrame implements ActionListener{
         notas_PMDM = new JSpinner(modeloSpinnerNumeros2);
         notas_PSP = new JSpinner(modeloSpinnerNumeros3);
         notas_AD = new JSpinner(modeloSpinnerNumeros4);
-        imagen = new ImageIcon("follow.png");
         
+        btnPasar.setActionCommand("botonAñadir");
+        btnPasar.setIcon(new ImageIcon(getClass().getResource("./follow.png")));
     }
 
     @Override
