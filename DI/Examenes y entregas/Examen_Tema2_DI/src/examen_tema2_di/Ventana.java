@@ -37,6 +37,7 @@ public class Ventana extends JFrame implements ActionListener{
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        this.setLocation(750,400);
         acciones();
     }
     
