@@ -1,0 +1,8 @@
+cd .\Desktop
+notepad procesos.java
+cd "C:\Program Files\Java\jdk-11.0.4\bin"
+.\javac.exe "C:\Users\Usuario DAM 2\Desktop\procesos.java"
+cd ~
+cd .\Desktop
+java procesos
+notepad hola.txt

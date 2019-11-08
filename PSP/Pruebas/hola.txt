@@ -1,0 +1,156 @@
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                  
+-------  ------    -----      -----     ------     --  -- -----------                                                  
+    386      22    21944      31636       0,44   7572   1 ApplicationFrameHost                                         
+    200      12     8628      12656       0,16   8864   0 audiodg                                                      
+    221      14     5432      13072       0,05   1144   1 chrome                                                       
+    345      32    65944      94368      26,50   2012   1 chrome                                                       
+    142      11     2008       8608       0,02   2712   1 chrome                                                       
+    241      21    22252      36668       0,39   5404   1 chrome                                                       
+    160       9     1632       6296       0,02   6044   1 chrome                                                       
+    226      18    12844      20536       0,17   6160   1 chrome                                                       
+    461      30    20336      36288      10,66   6504   1 chrome                                                       
+    705      26   170376     167348      42,25   7048   1 chrome                                                       
+   1174      46    63416     121152      50,91   7672   1 chrome                                                       
+    329      40    82216     102672      20,20   8504   1 chrome                                                       
+     81       5     4336       3892       0,02   8712   1 cmd                                                          
+    119       8     6612      11072       0,02   6172   1 conhost                                                      
+    256      13     7448      17868       0,11   6508   1 conhost                                                      
+    214      13     3016      13024       0,16   1220   1 CredentialEnrollmentManager                                  
+    508      20     1672       5132               616   0 csrss                                                        
+    546      21     2372       5796               720   1 csrss                                                        
+    419      15     7688      18652       3,53   4100   1 ctfmon                                                       
+    129       7     1692       6792       0,14   5856   1 dllhost                                                      
+    213      16     3716      11640       0,17   7472   1 dllhost                                                      
+    940      36    52344      77348              1100   1 dwm                                                          
+   2598     238    62252     139616      30,47   5540   1 explorer                                                     
+     32       8     2712       6644              1012   1 fontdrvhost                                                  
+     32       5     1380       3312              1020   0 fontdrvhost                                                  
+    523      26    17160      55532       1,64   1344   1 GameBar                                                      
+    282      13     3056      17192       0,11   4968   1 GameBarFT                                                    
+    161      10     1652        200               712   0 GoogleCrashHandler                                           
+    140       9     1656        192              4912   0 GoogleCrashHandler64                                         
+      0       0       60          8                 0   0 Idle                                                         
+    168       9     1916       8532              3652   0 igfxCUIService                                               
+    564      24     6712      26176       0,34   4948   1 igfxEM                                                       
+    152       8     1456       7184              3396   0 IntelCpHDCPSvc                                               
+    133       7     1428       6748              3552   0 IntelCpHeciSvc                                               
+   1394      28     7848      21420               872   0 lsass                                                        
+      0       0      192      11936              1796   0 Memory Compression                                           
+    810      76   212928     202260              3260   0 MsMpEng                                                      
+   1145      46   931100     884708     171,34   8500   1 netbeans64                                                   
+    190      11     4976      10220              5364   0 NisSrv                                                       
+    728      60    24704      64676       0,72   9016   1 OneDrive                                                     
+    559      28    52368      54760       0,28   9040   1 powershell                                                   
+    933      74   110004     145840      52,72   4844   1 powershell_ise                                               
+    359      15     4148      14052       0,19   7312   1 RAVCpl64                                                     
+      0      15     5884      19744               120   0 Registry                                                     
+    441      22     9056      33284       2,19   1000   1 RuntimeBroker                                                
+    210      11     2676      15392       0,05   5536   1 RuntimeBroker                                                
+    591      27    10336      37512       1,44   6340   1 RuntimeBroker                                                
+    359      15     3800      15204       0,11   6736   1 RuntimeBroker                                                
+    118       7     1468       7056       0,02   7032   1 RuntimeBroker                                                
+    277      16     3680      21564       0,59   7084   1 RuntimeBroker                                                
+    206      11     2540      15956       0,05   7348   1 RuntimeBroker                                                
+    306      13     3236      15864       0,28   7884   1 RuntimeBroker                                                
+    151       9     2100       8532              7412   0 SearchFilterHost                                             
+    886      65    32332      44444              2168   0 SearchIndexer                                                
+    382      13     2716      12440               564   0 SearchProtocolHost                                           
+   1363      95   120620     190348       6,78   1384   1 SearchUI                                                     
+    187      11     2264      14420       0,03   4484   1 SecurityHealthHost                                           
+    393      15     4232      15232              4520   0 SecurityHealthService                                        
+    153       9     1784       8688       0,03   5376   1 SecurityHealthSystray                                        
+    640      10     4868       9880               844   0 services                                                     
+     89       6     2900       5856              8884   0 SgrmBroker                                                   
+    536      24    12496      51628       0,23   6132   1 ShellExperienceHost                                          
+    574      18     6984      27432       2,98   4748   1 sihost                                                       
+    436      36    14744      39352       0,41   6596   1 SkypeApp                                                     
+    154       8     2024       1016       0,05   6660   1 SkypeBackgroundHost                                          
+    390      22     7884      21932       0,11    820   1 smartscreen                                                  
+     53       3     1152       1176               464   0 smss                                                         
+    434      21     5540      14936              2412   0 spoolsv                                                      
+    596      31    25600      75268       2,59   6024   1 StartMenuExperienceHost                                      
+    222      12     2632       9592               352   0 svchost                                                      
+   1161      21    12184      28896               572   0 svchost                                                      
+    265      10     2324       8252               620   0 svchost                                                      
+    166      10     1836       9032               636   0 svchost                                                      
+   1198      18     7748      15524               724   0 svchost                                                      
+     86       5      908       3952               988   0 svchost                                                      
+    118       7     1268       5452              1128   0 svchost                                                      
+    214      12     2308      10280              1172   0 svchost                                                      
+    211      12     2732      11352              1216   0 svchost                                                      
+    170       9     1876       7740              1284   0 svchost                                                      
+    387      17     5672      15300              1292   0 svchost                                                      
+    221      12     2632      11872              1436   0 svchost                                                      
+    177      11     1892       8208              1468   0 svchost                                                      
+    238      10     2572       9548              1544   0 svchost                                                      
+    156       9     2004      12188              1568   0 svchost                                                      
+    412      14    13872      17092              1628   0 svchost                                                      
+    163       7     1456       5968              1664   0 svchost                                                      
+    234      14    71568      76404              1696   0 svchost                                                      
+    205       7     1312       5852              1704   0 svchost                                                      
+    220       9     1864       7832              1752   0 svchost                                                      
+    175      10     2124       8172              1760   0 svchost                                                      
+    222      12     2336      11368              1868   0 svchost                                                      
+    204      12     1960       8872              1900   0 svchost                                                      
+    245      11     2300       9908              1908   0 svchost                                                      
+    176      10     7008      15504              1996   0 svchost                                                      
+    368      13     3016      12768              2032   0 svchost                                                      
+    126      10     1644       6388              2084   0 svchost                                                      
+    137      22     4820       9028              2088   0 svchost                                                      
+    262      13     2912       8136              2132   0 svchost                                                      
+    352      14     2340       9564              2140   0 svchost                                                      
+    229      10     2324       7704              2148   0 svchost                                                      
+    203      14     2372      12516              2316   0 svchost                                                      
+    167       9     1628       7316              2448   0 svchost                                                      
+    407      32    11420      20528              2528   0 svchost                                                      
+    221      12     2944      11392              2568   0 svchost                                                      
+    185      10     2004       8160              2656   0 svchost                                                      
+    369      17     7216      17316              2864   0 svchost                                                      
+    542      24    15712      31912              2872   0 svchost                                                      
+    260      25     3668      13100              2880   0 svchost                                                      
+    135       9     1584       6632              2896   0 svchost                                                      
+    383      19     4588      20792              2904   0 svchost                                                      
+    128       7     1296       5624              2912   0 svchost                                                      
+    367      15     4296      11396              2920   0 svchost                                                      
+    340      18    24624      33116              2928   0 svchost                                                      
+    475      18     3388      12308              3044   0 svchost                                                      
+    272      16     4024      19504              3116   0 svchost                                                      
+    109       7     1264       5424              3208   0 svchost                                                      
+    356      10     2684       8652              3236   0 svchost                                                      
+    390      16     6764      20552              3364   0 svchost                                                      
+    160      10     1708       7112              3440   0 svchost                                                      
+    203      11     2280       8808              3480   0 svchost                                                      
+    275      17     4824      15952              3804   0 svchost                                                      
+    125       8     1400       7152              3912   0 svchost                                                      
+    375      23     3288      12000              4116   0 svchost                                                      
+    204      12     2308      11508              4296   0 svchost                                                      
+    320      18     4160      15848              4588   0 svchost                                                      
+    286      14     5668      17452       1,27   4780   1 svchost                                                      
+    470      22     7556      32708       0,73   4812   1 svchost                                                      
+    147       9     1640       7732              5024   0 svchost                                                      
+    167       9     1728       7752              5044   0 svchost                                                      
+    240      13     3164      14480              5080   0 svchost                                                      
+    311      19     4232      16176              5228   0 svchost                                                      
+    314      16     3748      21464       0,45   5696   1 svchost                                                      
+    222      13     2856      11016              6744   0 svchost                                                      
+    403      19     3844      18264              6888   0 svchost                                                      
+    438      24     4992      19496       0,36   7320   1 svchost                                                      
+    149       9     1608      10872              7736   0 svchost                                                      
+    226      17     2168       7476              7768   0 svchost                                                      
+    225      11     3812       8632              8000   0 svchost                                                      
+    189      15     6376       9836              8008   0 svchost                                                      
+   3106       0      216      10108                 4   0 System                                                       
+    835      40    22672        604       0,66   7512   1 SystemSettings                                               
+    309      32     6684      16984       0,33   4884   1 taskhostw                                                    
+    281      25     5656      19656              5328   1 veyon-server                                                 
+    203      17     5264      17568              2888   0 veyon-service                                                
+    232      21    14176      28960       0,20   5772   1 veyon-worker                                                 
+    480      21    11696      46268       0,73   1492   1 WindowsInternal.ComposableShell.Experiences.TextInput.Inpu...
+    156      11     1384       6868               704   0 wininit                                                      
+    260      12     2736      11724               776   1 winlogon                                                     
+    503      37    17268        300       0,30   1884   1 WinStore.App                                                 
+    269      13     1672       7520              3660   0 WUDFHost                                                     
+    616      30    13688      32840       0,50   6620   1 YourPhone                                                    
+
+
