@@ -13,6 +13,7 @@ public class Practica_CV_DI{
             public void run() {
                 
                 Ventana v = new Ventana();
+                v.initGUI();
             }
         });
                 
