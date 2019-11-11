@@ -1,5 +1,6 @@
 package carrera;
 
+
 import java.io.IOException;
 import java.awt.*;
 import java.awt.event.*;
@@ -89,7 +90,7 @@ public class Carrera {
             System.out.println(e);
         }
 
-        robot3.mouseMove(592, 309);
+        robot3.mouseMove(50, 50);
         robot3.mousePress(InputEvent.BUTTON1_MASK);
         robot3.mouseRelease(InputEvent.BUTTON1_MASK);
 
