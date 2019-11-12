@@ -13,7 +13,7 @@ public class Carrera {
     private static final int SPEED = 300;
 
     private void execute(int letter[]) {
-        try {
+    try {
             robot = new Robot();
 
         } catch (AWTException e) {
@@ -28,13 +28,12 @@ public class Carrera {
     }
 
     public static void main(String args[]) throws AWTException {
-        PanelCarrera carrera = new PanelCarrera();
-        System.out.println("----------CLASIFICACION-------------");
 
         Carrera t = new Carrera();
         try {
             //Ponemos a "Dormir" el programa durante los ms que queremos
-            Thread.sleep(2 * 1000);
+        //bso f1
+        Thread.sleep(2 * 1000);
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -45,7 +44,7 @@ public class Carrera {
             System.out.println(e);
         }
         int[] executeNotepad =
-                {KeyEvent.VK_WINDOWS, KeyEvent.VK_N, KeyEvent.VK_O, KeyEvent.VK_T, KeyEvent.VK_ENTER};
+                {KeyEvent.VK_WINDOWS, KeyEvent.VK_A, KeyEvent.VK_R, KeyEvent.VK_C, KeyEvent.VK_ENTER};
         t.execute(executeNotepad);
         int[] messageToPrint =
                 {KeyEvent.VK_E, KeyEvent.VK_S, KeyEvent.VK_P, KeyEvent.VK_E, KeyEvent.VK_R, KeyEvent.VK_A };
@@ -81,7 +80,7 @@ public class Carrera {
         robot3.mouseRelease(InputEvent.BUTTON1_MASK);
 
         int[] messageToPrint2 =
-                {KeyEvent.VK_B, KeyEvent.VK_S, KeyEvent.VK_O, KeyEvent.VK_SPACE, KeyEvent.VK_F, KeyEvent.VK_1, KeyEvent.VK_ENTER};
+                {KeyEvent.VK_R, KeyEvent.VK_O, KeyEvent.VK_O, KeyEvent.VK_M, KeyEvent.VK_B, KeyEvent.VK_A, KeyEvent.VK_ENTER};
         t.execute(messageToPrint2);
         try {
             //Ponemos a "Dormir" el programa durante los ms que queremos
