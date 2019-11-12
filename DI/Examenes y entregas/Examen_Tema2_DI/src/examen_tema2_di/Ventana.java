@@ -74,6 +74,7 @@ public class Ventana extends JFrame implements ActionListener{
         pCentro.add(notas_PSP);
         pCentro.add(nota_AD);
         pCentro.add(notas_AD);
+        
         return pCentro;
     }
     
