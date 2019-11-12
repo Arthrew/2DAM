@@ -1,20 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package paneles;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-public class PestaniaUno extends JPanel implements ChangeListener {
-    private Container contenedor;
-
+/**
+ *
+ * @author lopez
+ */
+public class PestaniaDos extends JPanel implements ChangeListener {
+    
     JCheckBox cNormal;
     JRadioButton rNormal, rUno, rDos, rTres;
     ButtonGroup grupoRadios;
-    JLabel titulo;
 
-    public PestaniaUno() {
+    public PestaniaDos() {
         initGUI();
     }
 
@@ -32,8 +37,11 @@ public class PestaniaUno extends JPanel implements ChangeListener {
     }
 
     private void configurarPanel() {
-        contenedor.add(titulo, BorderLayout.NORTH);
-        contenedor.add(pCardLayout(), BorderLayout.CENTER);
+        this.add(cNormal);
+        this.add(rNormal);
+        this.add(rUno);
+        this.add(rDos);
+        this.add(rTres);
     }
 
     private void instancias() {
@@ -44,9 +52,9 @@ public class PestaniaUno extends JPanel implements ChangeListener {
         rTres = new JRadioButton("opcion3", true);
         grupoRadios = new ButtonGroup();
         grupoRadios.add(rUno);
-        grupoRadios.add(rDos);
         grupoRadios.add(rTres);
-        titulo = new JLabel("POR FAVOR, RELLENA LOS DATOS DE TU CURRICULUM"); 
+        grupoRadios.add(rDos);
+        
 
     }
 
@@ -63,4 +71,5 @@ public class PestaniaUno extends JPanel implements ChangeListener {
             }
         }
     }
+    
 }
