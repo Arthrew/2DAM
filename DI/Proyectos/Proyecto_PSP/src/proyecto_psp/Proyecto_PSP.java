@@ -1,10 +1,16 @@
-package carrera;
+package proyecto_psp;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.awt.*;
-import java.awt.event.*;
 
-public class Carrera {
+/**
+ *
+ * @author lopez
+ */
+public class Proyecto_PSP {
 
     private Robot robot;
 
@@ -25,9 +31,9 @@ public class Carrera {
         }
     }
 
-    public static void main(String args[]) throws AWTException, IOException {
+    public static void main(String[] args) throws IOException, AWTException {
 
-        Carrera t = new Carrera();
+        Proyecto_PSP t = new Proyecto_PSP();
 
         try {
             //Ponemos a "Dormir" el programa durante los ms que queremos
@@ -41,16 +47,14 @@ public class Carrera {
         int[] messageToPrint
                 = {KeyEvent.VK_A, KeyEvent.VK_H, KeyEvent.VK_O, KeyEvent.VK_R, KeyEvent.VK_A, KeyEvent.VK_SPACE, KeyEvent.VK_E, KeyEvent.VK_L,
                     KeyEvent.VK_SPACE, KeyEvent.VK_P, KeyEvent.VK_R, KeyEvent.VK_O, KeyEvent.VK_C, KeyEvent.VK_E, KeyEvent.VK_S, KeyEvent.VK_O,
-                KeyEvent.VK_SPACE,KeyEvent.VK_SPACE,KeyEvent.VK_SPACE,KeyEvent.VK_3,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD,
-                KeyEvent.VK_2,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD,KeyEvent.VK_1,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD,KeyEvent.VK_PERIOD};
+                    KeyEvent.VK_SPACE, KeyEvent.VK_SPACE, KeyEvent.VK_SPACE, KeyEvent.VK_3, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD,
+                    KeyEvent.VK_2, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_1, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD};
         t.execute(messageToPrint);
-        
-        
 
         {
             ProcessBuilder pb = new ProcessBuilder("notepad");
             pb.start();
-            
+
         }
 
         int[] closeIt
@@ -90,6 +94,7 @@ public class Carrera {
         } catch (Exception e) {
             System.out.println(e);
         }
+        
 
         robot3.mouseMove(50, 50);
         robot3.mousePress(InputEvent.BUTTON1_MASK);
@@ -122,5 +127,26 @@ public class Carrera {
         robot3.mouseRelease(InputEvent.BUTTON1_MASK);
 
     }
+    
+
+    /*private void type(int i) {
+        robot.delay(40);
+        robot.keyPress(i);
+        robot.keyRelease(i);
+    }
+
+    private void type(String s) {
+        byte[] bytes = s.getBytes();
+        for (byte b : bytes) {
+            int code = b;
+            // keycode only handles [A-Z] (which is ASCII decimal [65-90])
+            if (code > 96 && code < 123) {
+                code = code - 32;
+            }
+            robot.delay(40);
+            robot.keyPress(code);
+            robot.keyRelease(code);
+        }
+    }*/
 
 }
