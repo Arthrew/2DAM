@@ -62,6 +62,7 @@ public class PestaniaDos extends JPanel implements ChangeListener {
     public void stateChanged(ChangeEvent e) {
 
         if (e.getSource() == rUno) {
+            System.out.println("tu puta madre");
 
         } else if (e.getSource() == cNormal) {
             if (cNormal.isSelected()) {
