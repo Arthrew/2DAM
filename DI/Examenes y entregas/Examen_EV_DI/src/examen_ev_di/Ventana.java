@@ -98,6 +98,7 @@ public class Ventana extends JFrame implements ActionListener {
         datos.setActionCommand("panelDatos");
         notas = new JMenuItem("Introducir notas");
         notas.setActionCommand("panelNotas");
+        notas.setEnabled(false);
         resumen = new JMenuItem("Resumen");
         resumen.setActionCommand("panelResumen");
 
