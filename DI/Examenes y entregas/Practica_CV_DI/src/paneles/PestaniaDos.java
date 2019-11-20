@@ -101,6 +101,10 @@ public class PestaniaDos extends JPanel implements ChangeListener, ActionListene
             JOptionPane.showMessageDialog(PestaniaDos.this, "Este es un diálogo de error",
                     "Titulo del mensaje", JOptionPane.ERROR_MESSAGE, null);
 
+<<<<<<< HEAD
+        if (e.getSource() == rUno) {
+            System.out.println("tu puta madre");
+=======
         } else if (e.getSource() == bDialogoWarn) {
             JOptionPane.showMessageDialog(PestaniaDos.this, "Este es un diálogo de warning",
                     "Titulo del mensaje", JOptionPane.WARNING_MESSAGE, null);
@@ -109,6 +113,7 @@ public class PestaniaDos extends JPanel implements ChangeListener, ActionListene
                     "¿Segudo que quieres continuar?",
                     "Titulo del mensaje", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,
                     null);
+>>>>>>> c271c9bd5ec65ff1bb64c3cede7e3af45aebf7d5
 
 
             if (opcion == JOptionPane.YES_OPTION) {
