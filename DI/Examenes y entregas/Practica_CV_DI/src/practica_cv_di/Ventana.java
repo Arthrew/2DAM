@@ -31,12 +31,13 @@ public class Ventana extends JFrame {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        this.pack();
     }
 
     private void configurarContainer() {
         container.add(panelPestanias);
         panelPestanias.addTab("Agregar", pestaniaUno);
-        //panelPestanias.addTab("Buscar", pestaniaDos);
+        panelPestanias.addTab("Buscar", pestaniaDos);
     }
 
     private void instancias() {

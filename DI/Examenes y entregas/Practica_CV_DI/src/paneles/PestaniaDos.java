@@ -5,92 +5,166 @@
  */
 package paneles;
 
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import practica_cv_di.Persona;
+import practica_cv_di.Ventana;
 
 /**
  *
  * @author lopez
  */
-public class PestaniaDos extends JPanel implements ChangeListener, ActionListener {
+public class PestaniaDos extends JPanel implements ActionListener {
 
-    JButton botonNormal, bDialogoInfo, bDialogoWarn, bDialogoError, bDialogoOpciones, bDialogoOpcionesPerso,
-            bDialogoEntrada, bDialogoEntradaPersona;
-    JProgressBar barraProgreso;
-    int opcion;
+    JLabel telf, dni, aniosEx, estudios, resulBus;
+    JTextField txtTelf, txtDni, txtEstudios, txtResult;
+    JButton btnBuscar, btnSalir;
+    JComboBox<String> trabajos;
+    JSpinner aniosExperiencia;
+    SpinnerNumberModel modeloAnios;
+    JTextArea resultados;
+
+    JPanel panelCentro, panelInf;
+    Container container;
 
     public PestaniaDos() {
-
         initGUI();
     }
 
-    public void initGUI() {
+    private void initGUI() {
         instancias();
-        configurarBarra();
         configurarPanel();
         acciones();
     }
 
-    private void configurarBarra() {
-        barraProgreso.setMinimum(0);
-        barraProgreso.setMaximum(100);
-        barraProgreso.setValue(0);
-        //barraProgreso.getValue();
-        barraProgreso.setStringPainted(true);
-        barraProgreso.setBorderPainted(true);
+    private void instancias() {
 
-    }
-
-    private void acciones() {
-        botonNormal.addActionListener(this);
-        bDialogoInfo.addActionListener(this);
-        bDialogoWarn.addActionListener(this);
-        bDialogoError.addActionListener(this);
-        bDialogoOpciones.addActionListener(this);
-        bDialogoOpcionesPerso.addActionListener(this);
-        bDialogoEntrada.addActionListener(this);
-        bDialogoEntradaPersona.addActionListener(this);
-        barraProgreso.addChangeListener(this);
+        telf = new JLabel("Teléfono");
+        dni = new JLabel("DNI");
+        aniosEx = new JLabel("Años de experiencia");
+        estudios = new JLabel("Seleciona tus estudios");
+        resulBus = new JLabel("Resultados de búsqueda");
+        txtTelf = new JTextField();
+        txtDni = new JTextField();
+        txtEstudios = new JTextField();
+        txtResult = new JTextField();
+        resultados = new JTextArea();
+        btnBuscar = new JButton("Buscar");
+        btnSalir = new JButton("Salir");
+        modeloAnios = new SpinnerNumberModel(1, 1, 50, 1);
+        aniosExperiencia = new JSpinner(modeloAnios);
+        trabajos = new JComboBox();
+        trabajos.addItem("Ingenieria Informatica");
+        trabajos.addItem("Ingenieria Industrial");
+        trabajos.addItem("Ingenieria Telecomunicaciones");
+        trabajos.addItem("Arquitectura");
+        trabajos.addItem("Derecho");
+        panelCentro = new JPanel();
+        panelInf = new JPanel();
 
     }
 
     private void configurarPanel() {
-        this.add(botonNormal);
-        this.add(barraProgreso);
-        this.add(bDialogoInfo);
-        this.add(bDialogoWarn);
-        this.add(bDialogoError);
-        this.add(bDialogoOpciones);
-        this.add(bDialogoOpcionesPerso);
-        this.add(bDialogoEntrada);
-        this.add(bDialogoEntradaPersona);
-    }
-
-    private void instancias() {
-        botonNormal = new JButton("Pulsar");
-        barraProgreso = new JProgressBar();
-        bDialogoError = new JButton("Error");
-        bDialogoWarn = new JButton("Aviso");
-        bDialogoInfo = new JButton("Info");
-        bDialogoOpciones = new JButton("Pregunta");
-        bDialogoOpcionesPerso = new JButton("Pregunta perso");
-        bDialogoEntrada = new JButton("Entrada");
-        bDialogoEntradaPersona = new JButton("Entrada persona");
+        this.setLayout(new BorderLayout());
+        this.add(configCentro(), BorderLayout.CENTER);
+        this.add(configInf(), BorderLayout.SOUTH);
 
     }
 
-    @Override
-    public void stateChanged(ChangeEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private void configurarConstrait(int x, int y, int tx, int ty, double px, double py, int anchor, int fill, Component c) {
+        GridBagConstraints constraints = new GridBagConstraints();
+        constraints.gridx = x;
+        constraints.gridy = y;
+        constraints.gridwidth = tx;
+        constraints.gridheight = ty;
+        constraints.weightx = px;
+        constraints.weighty = py;
+        constraints.anchor = anchor;
+        constraints.fill = fill;
+        panelCentro.add(c, constraints);
+    }
+
+    private JPanel configCentro() {
+        this.setLayout(new BorderLayout());
+        panelCentro.setLayout(new GridBagLayout());
+        configurarConstrait(0, 0, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, telf);
+        configurarConstrait(0, 1, 2, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, txtTelf);
+        configurarConstrait(0, 2, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, dni);
+        configurarConstrait(0, 3, 2, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, txtDni);
+        configurarConstrait(0, 4, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, aniosEx);
+        configurarConstrait(1, 4, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, aniosExperiencia);
+        configurarConstrait(0, 5, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, estudios);
+        configurarConstrait(0, 6, 2, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, trabajos);
+        configurarConstrait(0, 7, 1, 1, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, resulBus);
+        configurarConstrait(0, 8, 2, 2, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, resultados);
+
+        return panelCentro;
+    }
+
+    public JPanel configInf() {
+        panelInf.add(btnBuscar);
+        panelInf.add(btnSalir);
+        return panelInf;
+    }
+
+    private void acciones() {
+        btnBuscar.setActionCommand("Buscar");
+        btnSalir.setActionCommand("Salir");
+        btnBuscar.addActionListener(this);
+        btnSalir.addActionListener(this);
+        txtDni.addActionListener(this);
+        txtEstudios.addActionListener(this);
+        txtResult.addActionListener(this);
+        txtTelf.addActionListener(this);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        switch (e.getActionCommand()){
+            case "Salir":
+                System.exit(0);
+                break;
+            case "Buscar":
+                resultados.setText("");
+                buscarPersona();
+                break;
+        }
     }
 
+    public void buscarPersona() {
+
+        String cadena = "";
+        String experiencia = aniosExperiencia.getModel().getValue().toString();
+        String telefono = txtTelf.getText();
+        String DNI = txtDni.getText();
+        String profesion = trabajos.getSelectedItem().toString();
+
+        for (int i = 0; i < Ventana.listaPersonas.size(); i++) {
+            int experiencia1 = Ventana.listaPersonas.get(i).getAnios_exp();
+            int telefono1 = Ventana.listaPersonas.get(i).getTelefono();
+            String DNI1 = Ventana.listaPersonas.get(i).getDni();
+            String estudios1 = Ventana.listaPersonas.get(i).getEstudios();
+
+            if (experiencia.equals(experiencia1) || telefono.equals(telefono1) || DNI.equals(DNI1) || profesion.equals(estudios1)) {
+                cadena += Ventana.listaPersonas.get(i).getNombre() + ", " + telefono1 + ", " + DNI1 + ", " + estudios1 + ", " + experiencia1 + "\n";
+
+            }
+
+        }
+
+        if (cadena.equals("")) {
+            JOptionPane.showMessageDialog(null, "No encontro personas con los criterios de busqueda propocionados");
+        } else {
+            resultados.setText(cadena);
+        }
+    }
 }
