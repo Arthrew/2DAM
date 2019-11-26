@@ -66,10 +66,10 @@ public class Proyecto_PSP {
 
         t.execute(executeNotepad);
 
-        int[] texto = {KeyEvent.VK_A, KeyEvent.VK_H, KeyEvent.VK_O, KeyEvent.VK_R, KeyEvent.VK_A, KeyEvent.VK_SPACE, KeyEvent.VK_E, KeyEvent.VK_L,
-            KeyEvent.VK_SPACE, KeyEvent.VK_P, KeyEvent.VK_R, KeyEvent.VK_O, KeyEvent.VK_C, KeyEvent.VK_E, KeyEvent.VK_S, KeyEvent.VK_O,
-            KeyEvent.VK_SPACE, KeyEvent.VK_SPACE, KeyEvent.VK_3, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD,
-            KeyEvent.VK_2, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_1, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD};
+        int[] texto = {KeyEvent.VK_T, KeyEvent.VK_U, KeyEvent.VK_SPACE, KeyEvent.VK_M, KeyEvent.VK_A, KeyEvent.VK_D, KeyEvent.VK_R, KeyEvent.VK_E,
+            KeyEvent.VK_SPACE, KeyEvent.VK_E, KeyEvent.VK_S, KeyEvent.VK_SPACE, KeyEvent.VK_U, KeyEvent.VK_N, KeyEvent.VK_A, KeyEvent.VK_SPACE,
+            KeyEvent.VK_P, KeyEvent.VK_U, KeyEvent.VK_T, KeyEvent.VK_A, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD,
+            KeyEvent.VK_P, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_1, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD, KeyEvent.VK_PERIOD};
 
         t.execute(texto);
 
