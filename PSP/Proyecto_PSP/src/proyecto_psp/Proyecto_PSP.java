@@ -73,7 +73,7 @@ public class Proyecto_PSP {
 
         t.execute(texto);
 
-        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "start");//type nul > file.txt
+        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "start");
         pb.start();
 
         int[] guardarArchivo = {KeyEvent.VK_I, KeyEvent.VK_P, KeyEvent.VK_C, KeyEvent.VK_O, KeyEvent.VK_N, KeyEvent.VK_F, KeyEvent.VK_I, KeyEvent.VK_G, KeyEvent.VK_SPACE};

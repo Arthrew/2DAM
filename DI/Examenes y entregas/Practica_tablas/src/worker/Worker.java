@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica_tablas;
+package worker;
 
 import javax.swing.SwingUtilities;
 
@@ -11,7 +11,7 @@ import javax.swing.SwingUtilities;
  *
  * @author Usuario DAM 2
  */
-public class Practica_tablas {
+public class Worker {
 
     /**
      * @param args the command line arguments
